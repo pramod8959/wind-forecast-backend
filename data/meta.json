@@ -1,0 +1,9 @@
+{
+  "actualsRows": 1488,
+  "forecastRows": 19272,
+  "deliveryFrom": "2026-01-01",
+  "deliveryTo": "2026-01-31",
+  "forecastPublishFrom": "2025-12-30T00:00:00Z",
+  "forecastPublishTo": "2026-01-31T12:00:00Z",
+  "source": "https://data.elexon.co.uk/bmrs/api/v1"
+}
