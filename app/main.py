@@ -16,7 +16,7 @@ from .config import (
 from .elexon import load_cache
 
 app = FastAPI(
-    title="GB Wind Day-Ahead Briefing",
+    title="UK Wind Day-Ahead Briefing",
     description="Decision-time wind forecasts and accuracy for UK day-ahead procurement (January 2026).",
     version="0.2.0",
 )

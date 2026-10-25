@@ -1,4 +1,4 @@
-"""Decision-time forecast selection and accuracy metrics for GB day-ahead wind."""
+"""Decision-time forecast selection and accuracy metrics for UK day-ahead wind."""
 
 from __future__ import annotations
 
@@ -165,7 +165,7 @@ def build_day_series(
             "matchKey": "startTime (hour beginning, UTC)",
             "decisionRule": (
                 f"Latest WINDFOR with publishTime <= {to_iso(cutoff)} "
-                f"(09:00 UTC on D−1, before typical GB day-ahead gate)."
+                f"(09:00 UTC on D−1, before typical UK day-ahead gate)."
             ),
             "metricsNote": (
                 "MAE and bias use matched hours only. If every error has the same sign, "
@@ -248,7 +248,7 @@ def month_accuracy(
         "decisionRule": (
             f"For delivery day D, use the latest WINDFOR with publishTime <= "
             f"{DECISION_CUTOFF_HOUR_UTC:02d}:{DECISION_CUTOFF_MINUTE_UTC:02d} UTC on D−1 "
-            "(configurable assumption, before typical GB day-ahead gate ~09:20–09:50 GMT)."
+            "(configurable assumption, before typical UK day-ahead gate ~09:20–09:50 GMT)."
         ),
         "methodology": {
             **(sample_method or {}),
